@@ -37,6 +37,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.com.fiap.recipes.ui.theme.RecipesTheme
+import br.com.fiap.recipes.ui.theme.poppinsFamily
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RecipesTheme {
-
+                InitialScreen()
             }
         }
     }
@@ -110,12 +111,13 @@ fun InitialScreen() {
                     text = "UNLIMITED PREMIUM RECIPES",
                     fontSize = 16.sp,
                     color = MaterialTheme.colorScheme.secondary,
-                    fontWeight = FontWeight.Bold
+                    fontFamily = poppinsFamily,
                 )
                 Text(
                     text = "Start Cooking",
                     fontSize = 64.sp,
                     lineHeight = 64.sp,
+                    fontFamily = poppinsFamily,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
