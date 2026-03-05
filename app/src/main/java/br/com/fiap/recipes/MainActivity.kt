@@ -109,19 +109,13 @@ fun InitialScreen() {
             ) {
                 Text(
                     text = "UNLIMITED PREMIUM RECIPES",
-                    fontSize = 16.sp,
                     color = MaterialTheme.colorScheme.secondary,
-                    fontFamily = poppinsFamily,
+                    style = MaterialTheme.typography.titleSmall,
                 )
                 Text(
                     text = "Start Cooking",
-                    fontSize = 64.sp,
-                    lineHeight = 64.sp,
-                    fontFamily = poppinsFamily,
-                    fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier
-                        .padding(top = 8.dp, bottom = 16.dp)
+                    style = MaterialTheme.typography.displayLarge,
                 )
                 Row{
                     Button(
@@ -140,8 +134,7 @@ fun InitialScreen() {
                         Text(
                             text = "Login",
                             color = MaterialTheme.colorScheme.onPrimary,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold
+                            style = MaterialTheme.typography.labelMedium,
                         )
                     }
 
@@ -163,9 +156,7 @@ fun InitialScreen() {
                         Text(
                             text = "Sign up",
                             color = MaterialTheme.colorScheme.onTertiary,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold
-
+                            style = MaterialTheme.typography.labelMedium,
                         )
                     }
                 }
